@@ -123,13 +123,12 @@ a:active {
 }
 
 .table-container {
-    background-color: hsla(0, 0%, 12%, 0.6);
+    border: solid white 2px;
+    border-radius: 20px;;
     position: relative;
     display: inline-block;
     width: 800px;
     margin: 20px 40px;
-    border: solid #23d7ce 4px;
-    border-radius: 20px;
     vertical-align: top;
 }
 
@@ -144,7 +143,7 @@ a:active {
 .table-container h2 {
     width: 200px;
     right: 20px;
-    border-right: solid black 2px;
+    border-right: solid white 2px;
     padding: 10px;
 }
 
@@ -155,18 +154,20 @@ a:active {
 }
 
 table {
+    background-color: hsla(0, 0%, 12%, 0.6);
     border-collapse: collapse;
     margin: 0 auto;
     top: 50px;
-    border-top: solid black 2px;
-    width: 800px;
     border-radius: 20px;
+    width: 800px;
     color: white;
 }
 
 th {
     padding: 10px;
     font-size: 18px;
+    background-color: black;
+    border-top: solid white 1px;
 }
 
 td {
