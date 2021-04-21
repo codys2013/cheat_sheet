@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8"/>
         <title>HTML & CSS Cheat Sheet</title>
         <link href="./resources/CSS/styles.css" type="text/css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
         <header>
-            <h1>HTML & CSS<br/> Resource Page /<br/> Cheat Sheet</h1>
-            <p class="header">A basic but ever expanding page of references to 
-                help with your process of Web Development
-            </p>
-            <ul class="traveler">
-                <li id="label">Subjects</li>
-                <li><a href="#tables">HTML Tables</a></li>
-                <li><a href="#head">HTML Head</a></li>
-                <li><a href="#lists">HTML List</a></li>
-                <li><a href="#backgrounds">CSS Backgrounds</a></li>
-                <li><a href="#borders">CSS Borders</a></li>
-            </ul>
+            <div class='title-container'>
+                <h1>HTML & CSS<br/> Resource Page /<br/> Cheat Sheet</h1>
+            </div>
+            <div class='statement-container'>
+                <div class='title-statement'>
+                    <p class="header">A basic but ever expanding page of references to 
+                    help with your process of Web Development
+                    </p>
+                </div>
+            </div>    
+            <nav>
+                <ul class="traveler">
+                    <li id="label">Subjects</li>
+                    <li><a href="#tables">HTML Tables</a></li>
+                    <li><a href="#head">HTML Head</a></li>
+                    <li><a href="#lists">HTML List</a></li>
+                    <li><a href="#backgrounds">CSS Backgrounds</a></li>
+                    <li><a href="#borders">CSS Borders</a></li>
+                </ul>
+            </nav>
         </header>
         
         <main>
-            <div id="tables">
+            <div class='type-container'>
+                <h2 class='container-title'>HTML Elements</h2>
+            <div id="tables" class='table-container'>
                 <h2>Tables</h2>
                 <h3>Element that is used to host and display data</h3>
                 <table>
@@ -35,53 +48,53 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="left">&lt;table&gt;</td>
+                            <td class="left code">&lt;table&gt;</td>
                             <td class="middle">Table</td>
                             <td>The wrapper element for all HTML tables.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;thead&gt;</td>
+                            <td class="left code">&lt;thead&gt;</td>
                             <td class="middle">Table Head</td>
                             <td>The set of rows defining the column headers in a table.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;tbody&gt;</td>
+                            <td class="left code">&lt;tbody&gt;</td>
                             <td class="middle">Table Body</td>
                             <td>The set of rows containing actual table data.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;tr&gt;</td>
+                            <td class="left code">&lt;tr&gt;</td>
                             <td class="middle">Table Row</td>
                             <td>The table row container.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;td&gt;</td>
+                            <td class="left code">&lt;td&gt;</td>
                             <td class="middle">Table Data</td>
                             <td>The table data container.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;th&gt;</td>
+                            <td class="left code">&lt;th&gt;</td>
                             <td class="middle">Table Head Cell</td>
                             <td>Container holding headers within a table cell.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;tfoot&gt;</td>
+                            <td class="left code">&lt;tfoot&gt;</td>
                             <td class="middle">Table Foot</td>
                             <td>The set of rows defining the footer in a table.</td>
                         </tr>
                         <tr>
-                            <td class="left">colspan</td>
+                            <td class="left code">colspan</td>
                             <td class="middle">Column Span</td>
                             <td>Defines how main columns a td element should span.</td>
                         </tr>
                         <tr>
-                            <td class="left">rowspan</td>
+                            <td class="left code">rowspan</td>
                             <td class="middle">Row Span</td>
                             <td>Defines how mainy rows a td element should span.</td>
                         </tr>
                 </table>
             </div>
-            <div id="head">
+            <div id="head" class='table-container'>
                 <h2>Head</h2>
                 <h3>Element that is used to host a documents meta data</h3>
                 <table>
@@ -94,34 +107,34 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="left">&lt;head&gt;</td>
+                            <td class="left code">&lt;head&gt;</td>
                             <td class="middle">Head</td>
                             <td>The wrapper element for HTML head.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;title&gt;</td>
+                            <td class="left code">&lt;title&gt;</td>
                             <td class="middle">Title</td>
                             <td>Text only element that defines page title for toolbars and search engines.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;style&gt;</td>
+                            <td class="left code">&lt;style&gt;</td>
                             <td class="middle">Single Page Style</td>
                             <td>Element used to define style information with css code.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;link&gt;</td>
+                            <td class="left code">&lt;link&gt;</td>
                             <td class="middle">Link</td>
                             <td>Defines the relationship between a document and an external source.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;base&gt;</td>
+                            <td class="left code">&lt;base&gt;</td>
                             <td class="middle">Base Target</td>
                             <td>Defines a default address or target for all links on a page</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div id="lists">
+            <div id="lists" class='table-container'>
                 <h2>Lists</h2>
                 <h3>Element that hosts data and displays it in a bulleted order.</h3>
                 <table>
@@ -134,39 +147,42 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="left">&lt;ul&gt;</td>
+                            <td class="left code">&lt;ul&gt;</td>
                             <td class="middle">Unordered List</td>
                             <td>List with default markings as bullets.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;ol&gt;</td>
+                            <td class="left code">&lt;ol&gt;</td>
                             <td class="middle">Ordered List</td>
                             <td>List where items will be marked in numerical order.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;li&gt;</td>
+                            <td class="left code">&lt;li&gt;</td>
                             <td class="middle">List Item</td>
                             <td>Wrapper for each element contained in a list.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;dl&gt;</td>
+                            <td class="left code">&lt;dl&gt;</td>
                             <td class="middle">Description List</td>
                             <td>List where data can be a term or a description to the term.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;dt&gt;</td>
+                            <td class="left code">&lt;dt&gt;</td>
                             <td class="middle">Description Term</td>
                             <td>Defines a term in a description list.</td>
                         </tr>
                         <tr>
-                            <td class="left">&lt;dd&gt;</td>
+                            <td class="left code">&lt;dd&gt;</td>
                             <td class="middle">Description Descriptor</td>
                             <td>Describes the term in a description list.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div id="backgrounds">
+            </div>
+            <div class='type-container'>
+                <h2 class='container-title'>CSS Elements</h2>
+            <div id="backgrounds" class='table-container'>
                 <h2>Backgrounds</h2>
                 <h3>Adding design to the background of an object</h3>
                 <table>
@@ -179,39 +195,39 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="left">background-color</td>
+                            <td class="left code">background-color</td>
                             <td class="middle">Background Color</td>
                             <td>Specifies the background color of and element.</td>
                         </tr>
                         <tr>
-                            <td class="left">opacity</td>
+                            <td class="left code">opacity</td>
                             <td class="middle">Opacity</td>
                             <td>Specifies the transparency of and object from 0.0 to 1.0.</td>
                         </tr>
                         <tr>
-                            <td class="left">background-image</td>
+                            <td class="left code">background-image</td>
                             <td class="middle">Background Image</td>
                             <td>Specifies an image to use as the background of an element. By default, the image is repeated so it cover the element.</td>
                         </tr>
                         <tr>
-                            <td class="left">background-repeat</td>
+                            <td class="left code">background-repeat</td>
                             <td class="middle">Background Repeat</td>
                             <td>Property used to modify the default repetition of an image.</td>
                         </tr>
                         <tr>
-                            <td class="left">repeat-x/-y</td>
+                            <td class="left code">repeat-x/-y</td>
                             <td class="middle">Repeat Horizontally / Vertically</td>
                             <td>Used in conjunction with background-repeat to repeat an image only horizontally or vertically</td>
                         </tr>
                         <tr>
-                            <td class="left">no-repeat</td>
+                            <td class="left code">no-repeat</td>
                             <td class="middle">No Repeat</td>
                             <td>Used in conjunction with background-repeat to only display and image once.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div id="borders">
+            <div id="borders" class='table-container'>
                 <h2>Borders</h2>
                 <h3>Adding visible lines between elements, for both visual appeal and usability.</h3>
                 <table>
@@ -224,22 +240,23 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="left">border-style</td>
+                            <td class="left code">border-style</td>
                             <td class="middle">Border Style</td>
                             <td>Specifies border as: dotted, dashed, solid, double, groove, ridge, inset, outset, none, or hidden.</td>
                         </tr>
                         <tr>
-                            <td class="left">border-width</td>
+                            <td class="left code">border-width</td>
                             <td class="middle">Border Width</td>
                             <td>Specifies the width of the four borders by size (px, pt, cm, em, ect).</td>
                         </tr>
                         <tr>
-                            <td class="left">border-color</td>
+                            <td class="left code">border-color</td>
                             <td class="middle">Border Color</td>
                             <td>Sets color of borders with in put of name "red", HEX "#ff0000",<br/> RGB "rgb(255,0,0)", HSL "hls(0, 100%, 50%)", or transparent.</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
         </main>
         
